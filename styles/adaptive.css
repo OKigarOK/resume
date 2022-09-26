@@ -58,4 +58,12 @@
     .set_lang img {
         width: 35px;
     }
+
+    .img_links img:hover,
+    .inline img:hover {
+    cursor: pointer;
+    transform: none;
+    transition: none;
+    filter: none
+}
 }
