@@ -46,3 +46,13 @@
         width: 100%;
     }
 }
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .set_lang img {
+        width: 35px;
+    }
+}
