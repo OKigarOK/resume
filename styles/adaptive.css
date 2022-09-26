@@ -21,6 +21,10 @@
         height: 100%;
     }
 
+    .info_text {
+        margin-left: 0;
+    }
+
     .form-row {
         display: block;
         width: 100%;
@@ -38,7 +42,6 @@
     }
 
     .contacts {
-        margin: 0 10px;
         width: 215px;
     }
 
