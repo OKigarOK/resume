@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Сайт-резюме">
+    <meta name="keywords" content="frontend, developer, cv, resume">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/adaptive.css">
+    <link media="print" rel="stylesheet" href="./styles/print.css">
+    <title>Resume Igor Karzyuk</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="info">
+            <div class="sidebar">
+                <div>
+                    <img src="./images/avatar.jpg" class="avatar" alt="avatar" title="my photo">
+                </div>
+                <div class="contacts">
+                    <h2 my-translate="contacts_sidebar"></h2>
+                    <div class="inline">
+                        <a href="https://t.me/okigarok" target="_blank">
+                            <img src="./images/telegram.png" alt="telegram" class="img_link" title="Telegram">
+                        </a>
+                        <a href="https://wa.me/+375291730020" target="_blank">
+                            <img src="./images/whatsap.png" alt="whatsapp" title="Whatsapp">
+                        </a>
+                        <a href="tel:+375291730020" target="_blank">
+                            <img src="./images/icons8-мобильный-телефон-96.png" alt="phone" title="Phone">
+                        </a>
+
+                        <p>+375291730020</p>
+                    </div>
+                    <div class="inline">
+                        <a href="mailto:1730020@gmail.com" target="_blank">
+                            <img src="./images/icons8-gmail-96.png" alt="email" title="Email">
+                        </a>
+                        <p>1730020@gmail.com</p>
+                    </div>
+                    <h2 my-translate="networks_sidebar"></h2>
+                    <div class="img_links">
+                        <a href="https://www.linkedin.com/in/igor-karzyuk/" target="_blank">
+                            <img src="./images/icons8-линкедин-96.png" alt="linkedin" title="Linkedin">
+                        </a>
+                        <a href="https://www.drive2.ru/r/chrysler/pacifica/491169987143139953/" target="_blank">
+                            <img src="./images/icon_drive2.png" alt="drive2" title="Drive2">
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCQnuGmKlz4jtkdxSamt4z5w/videos" target="_blank">
+                            <img src="./images/icons8-youtube-в-квадрате-96.png" alt="youtube" title="YouTube">
+                        </a>
+                        <a href="https://www.instagram.com/p/CUmNe8Bj6eAM3ubn919I63ODPekaIkMys2PszQ0/?igshid=NjQxMzA2Mjk="
+                            target="_blank">
+                            <img src="./images/icons8-instagram-96.png" alt="instagram" title="Instagram">
+                        </a>
+                        <a href="https://vm.tiktok.com/ZMFdyRq4e/" target="_blank">
+                            <img src="./images/icons8-тикток-100.png" alt="tiktok" title="TikTok">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="info_text">
+                <div class="info_head">
+                    <div>
+                        <h1 my-translate="name"></h1>
+                    </div>
+                    <div class="set_lang">
+                        <img class="lang" src="./images/kisspng-flag-of-russia-computer-icons-russia-5ab9946b9c66e6.7577227715221115956406.png"
+                            alt="RU" onclick="changeToRu()" title="Русский">
+                        <a href='javascript:window.print(); void 0;'>
+                            <img src="./images/free-icon-printer-342366.png" alt="print" title="Print" class="icon_opacity">
+                        </a>
+                        <img class="lang icon_opacity" src="./images/kisspng-flag-of-england-flag-of-the-united-kingdom-clip-ar-kingdom-cliparts-5a89e4605d9bd9.6659850615189863363834.png"
+                            width="50px" alt="EN" onclick="changeToEn()" title="English">
+                    </div>
+                </div>
+                <p my-translate="description_item1"></p>
+                <p my-translate="description_item2"></p>
+                <p my-translate="description_item3"></p>
+            </div>
+        </div>
+        <div class="card">
+            <h2 my-translate="interests_head"></h2>
+            <ul class="list">
+                <li my-translate="interests_item1"></li>
+                <li my-translate="interests_item2"></li>
+                <li my-translate="interests_item3"></li>
+                <li my-translate="interests_item4"></li>
+            </ul>
+        </div>
+        <div class="card">
+            <h2 my-translate="study_head"></h2>
+            <ul class="list">
+                <li my-translate="study_item1"></li>
+                <li my-translate="study_item2"></li>
+                <li my-translate="study_item3"></li>
+                <li my-translate="study_item4"></li>
+                <li my-translate="study_item5"></li>
+            </ul>
+        </div>
+        <div class="card">
+            <h2 my-translate="work_head"></h2>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <td class="company">
+                            <h3>STRADA</h3>
+                        </td>
+                        <td>
+                            <h4 my-translate="job_title"></h4>
+                            <h4 my-translate="responsibilities"></h4>
+                            <ul class="work_header">
+                                <li my-translate="responsibilities_item1"></li>
+                                <li my-translate="responsibilities_item2"></li>
+                                <li my-translate="responsibilities_item3"></li>
+                                <li my-translate="responsibilities_item4"></li>
+                                <li my-translate="responsibilities_item5"></li>
+                            </ul>
+                            <h4 my-translate="achievements"></h4>
+                            <ul class="work_header">
+                                <li my-translate="achievements_item1"></li>
+                                <li my-translate="achievements_item2"></li>
+                                <li my-translate="achievements_item3"></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="card hidden_print">
+            <h2 my-translate="contact_head"></h2>
+            <form action="" class="form">
+                <div class="forms">
+                    <div class="form-row">
+                        <div class="form-item">
+                            <label for="name" my-translate="contact_name"></label>
+                            <input type="text" id="name" placeholder="Имя">
+                        </div>
+                        <div class="form-item">
+                            <label for="email" my-translate="contact_email"></label>
+                            <input type="email" id="email" placeholder="example@gmail.com">
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <label for="message" my-translate="contact_message"></label>
+                        <textarea id="message" cols="30" rows="10" placeholder="Здравствуйте..."></textarea>
+                    </div>
+                    <button my-translate="send_btn" class="btn" type="submit"></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="translate.js"></script>
+</body>
+
+</html>

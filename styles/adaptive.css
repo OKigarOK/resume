@@ -1,0 +1,48 @@
+@media (max-width: 750px) {
+    .info {
+        height: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    .set_lang img {
+        width: 40px;
+    }
+}
+
+@media (max-width: 650px) {
+    .info {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    .form-row {
+        display: block;
+        width: 100%;
+    }
+
+    .form-row .form-item {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .sidebar {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .contacts {
+        margin: 0 10px;
+        width: 215px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
