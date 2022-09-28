@@ -28,6 +28,8 @@
     .form-row {
         display: block;
         width: 100%;
+        margin-bottom: 10px;
+
     }
 
     .form-row .form-item {
@@ -61,9 +63,9 @@
 
     .img_links img:hover,
     .inline img:hover {
-    cursor: pointer;
-    transform: none;
-    transition: none;
-    filter: none
-}
+        cursor: pointer;
+        transform: none;
+        transition: none;
+        filter: none
+    }
 }

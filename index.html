@@ -71,7 +71,7 @@
                         <img class="lang" src="./images/kisspng-flag-of-russia-computer-icons-russia-5ab9946b9c66e6.7577227715221115956406.png"
                             alt="RU" onclick="changeToRu()" title="Русский">
                         <a href='javascript:window.print(); void 0;'>
-                            <img src="./images/free-icon-printer-342366.png" alt="print" title="Print" class="icon_opacity">
+                            <img src="./images/free-icon-printer-342366.png" alt="print" title="Print" class="icon_opacity print">
                         </a>
                         <img class="lang icon_opacity" src="./images/kisspng-flag-of-england-flag-of-the-united-kingdom-clip-ar-kingdom-cliparts-5a89e4605d9bd9.6659850615189863363834.png"
                             width="50px" alt="EN" onclick="changeToEn()" title="English">
@@ -132,28 +132,54 @@
         </div>
         <div class="card hidden_print">
             <h2 my-translate="contact_head"></h2>
-            <form action="" class="form">
+            <form action="#" class="form" id="form">
                 <div class="forms">
                     <div class="form-row">
                         <div class="form-item">
                             <label for="name" my-translate="contact_name"></label>
-                            <input type="text" id="name" placeholder="Имя">
+                            <input type="text" id="name" placeholder="Имя" class="_req">
                         </div>
                         <div class="form-item">
                             <label for="email" my-translate="contact_email"></label>
-                            <input type="email" id="email" placeholder="example@gmail.com">
+                            <input type="email" id="email" placeholder="example@gmail.com" class="_req _email">
                         </div>
                     </div>
                     <div class="form-item">
                         <label for="message" my-translate="contact_message"></label>
-                        <textarea id="message" cols="30" rows="10" placeholder="Здравствуйте..."></textarea>
+                        <textarea id="message" placeholder="Здравствуйте..." class="_req"></textarea>
+                    </div>
+                    <div class="checkbox">
+                        <input id="agreement_form" type="checkbox" name="agreement" class="checkbox_input _req">
+                        <label for="agreement_form" my-translate="agreement_item" class="checkbox_label"></label>
                     </div>
                     <button my-translate="send_btn" class="btn" type="submit"></button>
                 </div>
+
             </form>
         </div>
+
+        <!-- <div class="form">
+            <form action="#" >
+                <div class="form_item">
+                    <label for="formName">Имя</label>
+                    <input id="formName" type="text" class="form_input _req">
+                </div>
+
+                <div class="form_item">
+                    <label for="formEmail">Email</label>
+                    <input id="formEmail" type="text" class="form_input _req _email">
+                </div>
+
+                <button type="submit" class="form_button">SEND</button>
+
+            </form>
+
+        </div> -->
+
+
     </div>
     <script src="translate.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>

@@ -26,6 +26,8 @@ body {
     max-width: 750px;
     margin: 10px auto;
     padding: 10px;
+    position: relative;
+
 }
 
 .info {
@@ -157,6 +159,23 @@ ul li {
     font-size: 16px;
 }
 
+.form::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(51,51,51,0.8) url(../images/sending_image.gif) center / 200px no-repeat;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.form._sending::after {
+    opacity: 1;
+    visibility: visible;
+}
+
 .form h2 {
     text-align: center;
 }
@@ -175,9 +194,21 @@ ul li {
     border: none;
     font-size: 16px;
     font-family: inherit;
-    padding: 5px;
+    padding: 5px 10px;
     outline: none;
     border-radius: 10px;
+}
+
+.form-item input:focus,
+.form-item textarea:focus {
+    box-shadow: 0 0 15px #242424;
+}
+
+
+.form-item textarea {
+    min-height: 100px;
+    resize: vertical;
+    margin-bottom: 10px;
 }
 
 .form-row {
@@ -261,3 +292,58 @@ ul li {
 .icon_opacity:hover {
     opacity: 0.75;
 }
+
+/* .checkbox {
+
+} */
+
+.checkbox_input{
+    display: none;
+}
+
+.checkbox_input:checked + .checkbox_label::after {
+    transform: scale(1);
+}
+
+.checkbox_label {
+    font-size: 16px;
+    color: #696969;
+    /* line-height: 140%; */
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.checkbox_label::before {
+    content: "";
+    align-self: flex-start;
+    flex: 0 0 24px;
+    height: 24px;
+    background-color: white;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.checkbox_label::after {
+    transition: transform 0.2s ease 0s;
+    content: "";
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    background-color: #00d264;
+    border-radius: 4px;
+    transform: scale(0);
+}
+
+
+.form_input._error,
+.form-item input._error,
+.form-item textarea._error,
+.checkbox._error .checkbox_label::before {
+    box-shadow: 0 0 15px red;
+    /* background: red; */
+}
+
