@@ -27,7 +27,6 @@ body {
     margin: 10px auto;
     padding: 10px;
     position: relative;
-
 }
 
 .info {
@@ -75,10 +74,8 @@ body {
 }
 
 h2 {
-    margin-bottom: 20px;
     text-align: center;
     background: #242424;
-    border-radius: 20px;
 }
 
 p {
@@ -134,15 +131,14 @@ ul li {
 .list li {
     font-size: 16px;
     color: DimGrey;
-    padding: 0;
-    margin-bottom: 5px;
-    padding-bottom: 5px;
+    padding: 5px;
     list-style: none;
     border-bottom: 2px solid DimGrey;
 }
 
 .table {
     width: 100%;
+    margin-top: 5px;
 }
 
 .work_header li {
@@ -157,6 +153,10 @@ ul li {
     padding-bottom: 5px;
     color: DimGrey;
     font-size: 16px;
+}
+
+.form {
+    margin-top: 10px;
 }
 
 .form::after {
@@ -293,10 +293,6 @@ ul li {
     opacity: 0.75;
 }
 
-/* .checkbox {
-
-} */
-
 .checkbox_input{
     display: none;
 }
@@ -308,7 +304,6 @@ ul li {
 .checkbox_label {
     font-size: 16px;
     color: #696969;
-    /* line-height: 140%; */
     display: inline-flex;
     align-items: center;
     cursor: pointer;
@@ -338,12 +333,9 @@ ul li {
     transform: scale(0);
 }
 
-
 .form_input._error,
 .form-item input._error,
 .form-item textarea._error,
 .checkbox._error .checkbox_label::before {
     box-shadow: 0 0 15px red;
-    /* background: red; */
 }
-

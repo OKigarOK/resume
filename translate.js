@@ -34,7 +34,6 @@ const ru = {
     contact_message: 'Ваше сообщение* :',
     agreement_item: 'Я принимаю условия пользовательского соглашения и согласен на обработку персональных данных *',
     send_btn: 'Отправить',
-
     change_to_EN: 'EN',
     change_to_RU: 'РУ',
 }
@@ -74,7 +73,6 @@ const en = {
     contact_message: 'Your message* :',
     agreement_item: 'I accept the terms of the user agreement and agree to the processing of personal data*',
     send_btn: 'Send',
-
     change_to_EN: 'EN',
     change_to_RU: 'RU',
 }
