@@ -98,8 +98,14 @@ a {
     background: linear-gradient(135deg, #f5deb3 70%, #9f7c3a);
 }
 
-ul li {
+ul li,
+li a {
     color: DimGrey;
+    font-weight: normal;
+}
+
+li a:hover {
+    font-weight: bolder;
 }
 
 .btn {
