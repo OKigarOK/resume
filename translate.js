@@ -22,7 +22,8 @@ const ru = {
     work_examples: 'Примеры работ:',
     works_item1: 'Мой первый сайтик',
     works_item2: 'Грёбаный калькулятор :)',
-    works_item3: 'Аренда автомобилей (Angular)',
+    works_item3: 'А теперь о погоде...(JS)',
+    works_item4: 'Аренда автомобилей (Angular)',
 
     work_head: 'Опыт работы:',
     job_title: 'Frontend-разработчик (неоплачиваемая стажировка 10.2021-08.2022)',
@@ -69,7 +70,8 @@ const en = {
     work_examples: 'Work examples:',
     works_item1: 'My first website',
     works_item2: 'F***ing calculator :)',
-    works_item3: 'Car rent (Angular)',
+    works_item3: 'And now about the weather (JS)',
+    works_item4: 'Car rent (Angular)',
 
     work_head: 'Work experience:',
     job_title: 'Frontend developer (unpaid internship 10.2021-08.2022)',
